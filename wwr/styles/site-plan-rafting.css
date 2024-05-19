@@ -1,7 +1,7 @@
 
 
 
-@import url('https://fonts.google.com/specimen/Poetsen+One');
+@import url('https://fonts.google.com/specimen/Poetsen+One, https://fonts.google.com/specimen/Open+Sans');
 
 body{
     font-family: var(--paragraph-font);
@@ -31,6 +31,34 @@ body{
     
     
     }
+
+    h1{
+        font-family:var(--heading-font);
+        color: var(--primary-color)
+    }
+
+    h2{
+        font-family:var(--heading-font);
+        color: var(--secondary-color)
+    }
+
+    h3{
+        font-family:var(--heading-font);
+        color: var(--accent1-color)
+    }
+
+    h4{
+        font-family:var(--heading-font);
+        color: var(--accent2-color)
+    }
+
+    h5{
+        font-family:var(--heading-font);
+        color: var(--nav-background-color)
+    }
+
+
+
 
     header{
         padding: 20px;
