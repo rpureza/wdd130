@@ -1,0 +1,14 @@
+
+
+/* styles.css */
+.profile-image {
+    float: right;
+    margin-left: 20px; /* Space between image and paragraph */
+    border-radius: 50%; /* Optional: make the image circular */
+    width: 150px; /* Example width */
+    height: 150px; /* Example height */
+}
+
+.profile-text {
+    overflow: hidden; /* Ensure the paragraph wraps around the floated image */
+}
