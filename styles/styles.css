@@ -57,6 +57,8 @@ aside img{
 main img{
     width: 150px;
     height: auto;
+    float: right;
+
 }
 
 p{padding: 0;}
@@ -78,9 +80,11 @@ footer {
     color: #000;
 }
 
-aside{
-    width: 25em;
-    text-align: center;
+
+aside h2{
+    position: relative;
+    top: 0px;
+    
 }
 
 
