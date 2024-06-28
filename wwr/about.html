@@ -1,26 +1,104 @@
-
-
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        
-        
-        <meta name="author" content="Revi Pureza">
-        <link rel="stylesheet" href="styles/about.css">
-    
-    </head>
-
-
-
-
-
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Revi Pureza">
+    <link rel="stylesheet" href="styles/about.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #305252;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 1em;
+        }
+        .Hero {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .Hero img {
+            width: 100%;
+            height: auto;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        section img {
+            width: 200px;
+            height: auto;
+            margin: 0.5em;
+            cursor: pointer;
+        }
+        .sociallinks img {
+            width: 40px;
+            height: auto;
+            margin: 0.5em;
+            cursor: pointer;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        #imageModalContent {
+            margin: 15% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .closeModal {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .closeModal:hover,
+        .closeModal:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
     <header>
-
+        <h1>Rafting Company</h1>
     </header>
+
+    <nav>
+        <a href="Demo.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
 
     <main>
         <div class="Hero">
@@ -31,41 +109,68 @@
                 <p>Lorem ipsum dolor sit amet consectetur....</p>
             </article>
         </div>
-        <section>
+        <section id="history">
             <h2>History</h2>
             <p>Lorem ipsum dolor sit amet consectetur...</p>
         </section>
-
-        <section>
+        <section id="adventure">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/image1.jpg" alt="">
-            <img src="images/image2.jpg" alt="">
-            <img src="images/image3.jpg" alt="">
-            <img src="images/image4.jpg" alt="">
-            <img src="images/image5.jpg" alt="">
+            <img src="images/image1.jpg" alt="" onclick="openModal(this.src)">
+            <img src="images/image2.jpg" alt="" onclick="openModal(this.src)">
+            <img src="images/image3.jpg" alt="" onclick="openModal(this.src)">
+            <img src="images/image4.jpg" alt="" onclick="openModal(this.src)">
+            <img src="images/image5.jpg" alt="" onclick="openModal(this.src)">
         </section>
-
-
     </main>
-
     <footer>
         <nav class="sociallinks">
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" onmouseover="showTooltip(event, 'Facebook')" onmouseout="hideTooltip()">
                 <img src="images/facebook.webp" alt="Facebook">
             </a>
-            <a href="https://twitter.com">
+            <a href="https://twitter.com" onmouseover="showTooltip(event, 'Twitter')" onmouseout="hideTooltip()">
                 <img src="images/twitter.webp" alt="Twitter">
             </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com" onmouseover="showTooltip(event, 'Instagram')" onmouseout="hideTooltip()">
                 <img src="images/instagram.webp" alt="Instagram">
             </a>
-
         </nav>
-
+        <div id="tooltip" class="tooltip"></div>
     </footer>
+    <!-- Image Modal -->
+    <div id="imageModal">
+        <span class="closeModal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imageModalContent">
+    </div>
+    <script>
+        // Open image in modal
+        function openModal(src) {
+            document.getElementById("imageModal").style.display = "block";
+            document.getElementById("imageModalContent").src = src;
+        }
 
+        // Close the modal
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
 
+        // Show tooltip
+        function showTooltip(event, text) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'block';
+            tooltip.textContent = text;
+            tooltip.style.left = event.pageX + 'px';
+            tooltip.style.top = event.pageY + 'px';
+        }
 
+        // Hide tooltip
+        function hideTooltip() {
+            document.getElementById('tooltip').style.display = 'none';
+        }
+
+        // Smooth scroll to section
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
-
-
+</html>
