@@ -1,0 +1,103 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.header {
+    position: relative;
+    height: 400px;
+    background-color: #333; 
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    padding: 100px 20px;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.featured-image {
+    float: right;
+    margin: 20px;
+    border: 5px solid white;
+    width: 200px; 
+}
+
+.section {
+    padding: 20px 0;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #333;
+}
+
+
+.history, .adventure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.history p, .adventure p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 50px 20px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .featured-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 100%;
+    }
+}
