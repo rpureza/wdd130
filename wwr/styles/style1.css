@@ -205,7 +205,7 @@ h2 {
 /* Footer */
 footer {
     background-color: #b19cd9;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     color: white;
 }
@@ -213,15 +213,139 @@ footer {
 footer .social-media {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
 }
 
 footer .social-media a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.5;
 }
 
 
+/*Contact US*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.map-container {
+    margin-top: 10px;
+}
+
+.employee-profiles {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.employee-profiles .profile {
+    text-align: center;
+}
+
+.employee-profiles img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.5;
+}
 
 
