@@ -15,9 +15,13 @@ body {
     color: #333;
 }
 
-h1, h2 {
+h2 {
     text-align: center;
     color: #333;
+}
+
+h1{
+    color:#ddd;
 }
 
 
@@ -150,6 +154,12 @@ section {
     background-color: #fff;
 }
 
+
+h1{
+    color:#ddd;
+}
+
+
 h2 {
     font-size: 24px;
     font-weight: bold;
@@ -202,7 +212,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Footer */
+
 footer {
     background-color: #b19cd9;
     padding: 5px;
@@ -231,7 +241,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #ddd;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -259,6 +269,10 @@ nav ul li a.active {
 
 main {
     padding: 20px;
+}
+
+h1{
+    color:#ddd;
 }
 
 h2, h3 {
@@ -349,3 +363,130 @@ footer .social-media a {
 }
 
 
+/* Trips */
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h1{
+    color:#ddd;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+
+.call-to-action {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+    background: #3a3a3a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.call-to-action .cta-button:hover {
+    background: #555;
+}
+
+
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.trip {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+}
+
+.trip-details {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.trip-details h4 {
+    margin-top: 0;
+}
+
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #f4f4f4;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
